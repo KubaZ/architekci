@@ -158,10 +158,6 @@ ul {
 	overflow: hidden;
 }
 #container .item {
-	overflow: hidden;
-}
-#container img {
-	display:block;
 }
 #globalfooter {
 	font-family: 'Times New Roman';

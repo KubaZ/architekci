@@ -1,13 +1,10 @@
 /* Author: 
 
 */
-$('#container').imagesLoaded( function(){
-  $(this).isotope({
-	layoutMode: 'masonry',
-	itemSelector : '.item'
-  });
+$('#container').isotope({
+  // options
+  itemSelector : '.item'
 });
-
 
 
 
