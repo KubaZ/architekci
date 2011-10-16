@@ -197,14 +197,21 @@ ul {
 #up {
 	float: left;
 	margin-top: 18px;
-	padding: 0 33px;
+	width: 140px;
+	border-right: solid 1px #eee;
+}
+#up a {
+	display:block;
+	text-align: right;
+	font-weight: bold;
+	letter-spacing: 0;
+	margin-left: 33px;
 	width: 74px;
 	height: 32px;
 	line-height: 32px;
-	text-align: right;
-	background: url(../img/up.png) 30% 45% no-repeat;
+	background: url(../img/up.png) 0% 45% no-repeat;
 	color: #808184;
-	border-right: solid 1px #eee;
+	font-size: 14px;
 }
 #minima {
 	float: left;
