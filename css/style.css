@@ -161,11 +161,11 @@ ul {
 	overflow: hidden;
 }
 #container img {
-/*	margin: 10px 15px 10px 0;*/
 	display:block;
 }
 #globalfooter {
-	font-family: 'DharmaGothicMBold';
+	font-family: 'Times New Roman';
+	font-style: italic;
 	position: relative;
 	width: 100%;
 	margin: 20px 0;
@@ -179,8 +179,6 @@ ul {
 	margin-top: 18px;
 	height: 32px;
 	width: 690px;
-	font-family: 'Times New Roman';
-	font-style: italic;
 	border-right: solid 1px #eee;
 }
 #globalnav2 li{
@@ -195,6 +193,27 @@ ul {
 }
 #globalnav2 li a:hover, .active a{
 	color: #5f938e;
+}
+#up {
+	float: left;
+	margin-top: 18px;
+	padding: 0 33px;
+	width: 74px;
+	height: 32px;
+	line-height: 32px;
+	text-align: right;
+	background: url(../img/up.png) 30% 45% no-repeat;
+	color: #808184;
+	border-right: solid 1px #eee;
+}
+#minima {
+	float: left;
+	height: 32px;
+	line-height: 32px;
+	margin: 18px 0 0 24px;
+	text-align: center;
+	font-size: 10px;
+	color: #d3d3d3;
 }
 h1 {
 	font-size: 62px;
