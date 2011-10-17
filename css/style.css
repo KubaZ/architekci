@@ -185,7 +185,8 @@ ul {
 #container .item{
 	margin: 10px 0;
 }
-container .item img {
+#container {
+	width: 960px;
 }
 section {
 	width: 100%;
