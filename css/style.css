@@ -183,11 +183,27 @@ ul {
 	width: 100%;
 }
 #container .item{
+	display: block;
 	margin: 10px 0;
+	overflow: hidden;
 }
 #container {
 	float: left;
 	width: 960px;
+}
+#container .item img:hover {
+	-webkit-transform: scale(1.2);
+	-webkit-transition-timing-function: ease-in;
+	-webkit-transition-duration: 500ms;
+	-moz-transform: scale(1.2);
+	-moz-transition-timing-function: ease-in;
+	-moz-transition-duration: 500ms;
+	-o-transform: scale(1.2);
+	-o-transition-timing-function: ease-in;
+	-o-transition-duration: 500ms;
+	-ms-transform: scale(1.2);
+	-ms-transition-timing-function: ease-in;
+	-ms-transition-duration: 500ms;	
 }
 section {
 	width: 100%;
