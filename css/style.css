@@ -186,6 +186,7 @@ ul {
 	margin: 10px 0;
 }
 #container {
+	float: left;
 	width: 960px;
 }
 section {
@@ -288,6 +289,7 @@ article p {
 #globalfooter {
 	font-family: 'Times New Roman';
 	font-style: italic;
+	float: left;
 	position: relative;
 	width: 100%;
 	margin: 20px 0;
