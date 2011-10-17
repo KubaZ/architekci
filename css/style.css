@@ -109,7 +109,7 @@ ul {
 	position: absolute;
 	font-family: 'Times New Roman';
 	right: 0;
-	top: 74px;
+	top: 75px;
 	text-transform: lowercase;
 	font-size: 14px;
 	font-style: italic;
@@ -122,32 +122,39 @@ ul {
 }
 #lang li a{
 	text-align: center;
-	margin: 0 2px;	
+	margin-right: 4px;	
 	color: #b7b8ba;
 }
 #lang li a:hover,#lang .active a{
 	color: #878787;
 }
 #lang li:last-child a{
-	margin: 0 0 0 2px;	
+	margin: 0 0 0 3px;	
 }
 #globalnav {
 	float: right;
 	display: block;
 	color: #2a2a2a;
 	font-size: 24px;
-	width: 642px;
+	width: 624px;
+	height: 29px;
 	margin: 110px 0 0 0;
 }
 #globalnav ul {
 	width: 100%;
-	display: table;
+	height: 100%;
+	display: block;
 }
 #globalnav ul li {
-	display: table-cell;
+	float: left;
 	text-align: right;
+	margin-right: 16px;
+}
+#globalnav ul li:last-child {
+	margin-right: 0;
 }
 #globalnav li a {
+	font-weight: normal;
 	letter-spacing: 1px;
 	color: #363636;
 }
@@ -179,7 +186,7 @@ ul {
 }
 #maincontainer {
 	position: relative;
-	margin: 27px 0 29px 0;
+	margin: 28px 0 29px 0;
 	width: 100%;
 }
 #container .item{
@@ -210,11 +217,36 @@ section {
 	display: block;
 	float: left;
 }
+#contact {
+	margin-bottom: 14px;
+}
+#contact article {
+	padding-top: 26px;
+	height: 388px;
+	border-top: solid 1px #eee;	
+}
+#contact article p {
+	margin: 9px 0;
+	width: 100%;
+	font-size: 14px;
+}
+#contact p a {
+	color: #808184;	
+}
+#contact p a:hover {
+	color: #5f938e;	
+}
+#contact #zoomed {
+	height: 415px;
+}
+#contact .info {
+	margin-bottom: 9px;
+}
 article {
 	font-family: 'Times New Roman';
 	float: left;
 	display: block;
-	width: 302px;
+	width: 300px;
 	padding-top: 16px;
 	height: 361px;
 	border-bottom: solid 1px #eee;	
@@ -227,9 +259,16 @@ article p {
 	line-height: 18px;
 	color: #808184;
 }
+#zoomed {
+	display: block;
+	float: left;
+	width: 620px;
+	height: 412px;
+	margin-right: 22px;
+}
 #articleNav {
 	float: left;
-	width: 302px;
+	width: 300px;
 	height: 34px;
 	border-top: solid 1px #eee;	
 	border-bottom: solid 1px #eee;		
@@ -254,13 +293,6 @@ article p {
 #nextArticle img {
 	top:7px;
 	right:20px;
-}
-#zoomed {
-	display: block;
-	float: left;
-	width: 620px;
-	height: 412px;
-	margin: 0 20px 0 0;
 }
 #thumbs {
 	width: 100%;
@@ -308,22 +340,23 @@ article p {
 	float: left;
 	position: relative;
 	width: 100%;
-	margin: 20px 0;
-	height: 70px;
+	margin: 19px 0;
+	height: 71px;
 	border-top: solid 1px #eee;
 	border-bottom: solid 1px #eee;
 }
 #globalnav2 {
 	float: left;
 	display: table;
-	margin-top: 18px;
+	margin-top: 20px;
 	height: 32px;
-	width: 676px;
+	width: 690px;
 	padding-right: 14px;
 	border-right: solid 1px #eee;
 }
 #globalnav2 li{
-	display: table-cell;
+	float: left;
+	margin-right: 28px;
 }
 #globalnav2 li a {
 	line-height: 32px;
@@ -349,15 +382,15 @@ article p {
 	margin-left: 33px;
 	width: 74px;
 	height: 32px;
-	line-height: 32px;
-	background: url(../img/up.png) 0% 45% no-repeat;
+	line-height: 34px;
+	background: url(../img/up.png) 2px 10px no-repeat;
 	color: #808184;
 	font-size: 14px;
 }
 #minima {
 	float: left;
 	height: 32px;
-	line-height: 32px;
+	line-height: 34px;
 	margin: 18px 0 0 24px;
 	text-align: center;
 	font-size: 10px;
