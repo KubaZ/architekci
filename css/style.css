@@ -86,7 +86,8 @@ header {
 	font-family: 'DharmaGothicMBold';
 	font-weight: normal;
 	position: relative;
-	min-height: 158px;
+	width: 100%;
+	height: 160px;
 	text-transform: uppercase;
 }
 a {
@@ -153,15 +154,136 @@ ul {
 #globalnav li a:hover, .active a{
 	color: #5f938e;
 }
+#localnav {
+	width: 100%;
+	line-height: 35px;
+	border-top: solid 1px #eee;
+	border-bottom: solid 1px #eee;
+	margin: 20px 0 27px 0;
+	float: left;
+	text-transform: none;
+}
+#localnav li{
+	float: left;
+	margin: 0 15px;
+}
+#localnav li a{
+	font-family: 'Times New Roman';
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	color: #808184;	
+}
+#localnav li a:hover, .active a{
+	color: #5f938e;
+}
 #maincontainer {
-	margin: 19px 0 19px -10px;
+	position: relative;
+	margin: 27px 0 29px 0;
 	overflow: hidden;
-	width: 962px;
+	width: 100%;
+}
+section {
+	width: 100%;
+	display: block;
+	float: left;
+}
+article {
+	font-family: 'Times New Roman';
+	float: left;
+	display: block;
+	width: 302px;
+	padding-top: 16px;
+	height: 361px;
+	border-bottom: solid 1px #eee;	
+}
+article p {
+	float: left;
+	font-style: italic;
+	font-size: 12px;
+	margin-top: 14px;
+	line-height: 18px;
+	color: #808184;
+}
+#articleNav {
+	float: left;
+	width: 302px;
+	height: 34px;
+	border-top: solid 1px #eee;	
+	border-bottom: solid 1px #eee;		
+	display: table;
+}
+#articleNav li {
+	display: table-cell;
+}
+#articleNav li a {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+#articleNav li a img{
+	position: absolute;
+}
+#prevArticle img {
+	top:7px;
+	left:20px;
+}
+#nextArticle img {
+	top:7px;
+	right:20px;
+}
+#zoomed {
+	display: block;
+	float: left;
+	width: 620px;
+	height: 412px;
+	margin: 0 20px 0 0;
+}
+#thumbs {
+	width: 100%;
+	height: 88px;
+	border-bottom: solid 1px #eee;	
+	display: block;
+	float: left;
+	margin-bottom: 18px;
+}
+#thumbs {
+	width: 100%;
+	display: table;
+}
+#thumbs li {
+	float: left;
+	text-align: left;
+	width: 60px;
+	height: 52px;
+	margin: 18px 9px 0 9px;
+	border: solid 1px #eee;
+}
+#thumbs li:first-child {
+	margin-left: 0;
+}
+#thumbs li:last-child {
+	margin-right: 0;
+}
+#prevThumb {
+	float: left;
+	width: 60px;
+	height: 52px;
+	margin: 18px 9px 0 0;
+	border: solid 1px #eee;	
+}
+#nextThumb {
+	float: right;
+	width: 60px;
+	height: 52px;
+	margin: 18px 0 0 9px;
+	border: solid 1px #eee;
 }
 #container .item {
 }
 #container .item img {
-	margin: 10px;
+	border: solid 1px #eee;	
 }
 #globalfooter {
 	font-family: 'Times New Roman';
@@ -223,24 +345,21 @@ ul {
 	font-size: 10px;
 	color: #d3d3d3;
 }
-h1 {
-	font-size: 62px;
-	margin-bottom: -15px;
+#minima:hover {
+	color: #5f938e;
 }
-h4 {
+h5 {
+	font-size: 14px;
+	line-height: 18px;
 	font-weight: bold;
-	font-size: 22px;
-	margin: 0;
 	display: block;
-	text-align: center;
+	font-style: italic;
+	color: #808184;
+	margin: 0;
 }
-
-
-
-
-
-
-
+h5.name {
+	color: #5f938e;
+}
 
 /**** Isotope Filtering ****/
 

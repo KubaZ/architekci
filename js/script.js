@@ -3,7 +3,10 @@
 */
 $('#container').isotope({
   // options
-  itemSelector : '.item'
+  
+  masonry : {
+    columnWidth : 310
+  }
 });
 
 
