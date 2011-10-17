@@ -150,6 +150,7 @@ ul {
 	float: left;
 	text-align: right;
 	margin-right: 16px;
+	line-height: 29px;
 }
 #globalnav ul li:last-child {
 	margin-right: 0;
