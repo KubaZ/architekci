@@ -180,8 +180,12 @@ ul {
 #maincontainer {
 	position: relative;
 	margin: 27px 0 29px 0;
-	overflow: hidden;
 	width: 100%;
+}
+#container .item{
+	margin: 10px 0;
+}
+container .item img {
 }
 section {
 	width: 100%;
@@ -279,11 +283,6 @@ article p {
 	height: 52px;
 	margin: 18px 0 0 9px;
 	border: solid 1px #eee;
-}
-#container .item {
-}
-#container .item img {
-	border: solid 1px #eee;	
 }
 #globalfooter {
 	font-family: 'Times New Roman';
