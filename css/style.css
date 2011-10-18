@@ -94,7 +94,10 @@ a {
 	text-decoration: none;
 	color: #808184;
 }
-a:hover, .active a {
+a:hover {
+	color: #5f938e;
+}
+.active a {
 	color: #5f938e;
 }
 ul {
@@ -223,7 +226,7 @@ ul {
 #maincontainer {
 	position: relative;
 	float: left;
-	margin: 25px 0 29px 0;
+	margin: 25px 0 0 0;
 	width: 100%;
 }
 /**************  blok isotope  ***************/
