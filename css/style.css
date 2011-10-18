@@ -90,6 +90,10 @@ header {
 	width: 100%;
 	text-transform: uppercase;
 }
+#reference {
+	position: absolute;
+	top:0;
+}
 a {
 	text-decoration: none;
 	color: #808184;
@@ -106,8 +110,8 @@ ul {
 	padding: 0;
 }
 #logo {
-	float: left;
-	margin: 64px 68px 0 0;
+	position: absolute;
+	top: 64px;
 }
 /**************  wybór języka  ***************/
 #lang {
@@ -143,12 +147,14 @@ ul {
 	font-stretch: condensed;
 	color: #2a2a2a;
 	font-size: 24px;
-	width: 624px;
+	width: 100%;
 	height: 29px;
 	margin: 110px 0 0 0;
+	padding-bottom: 20px;
 }
 #globalnav ul {
-	width: 100%;
+	float: right;
+	width: 624px;
 	height: 100%;
 	display: block;
 }
@@ -175,7 +181,7 @@ ul {
 	line-height: 35px;
 	border-top: solid 1px #eee;
 	border-bottom: solid 1px #eee;
-	margin: 20px 0 0 0;
+	margin: 0;
 	float: left;
 	text-transform: none;
 }
@@ -199,7 +205,7 @@ ul {
 	height: 70px;
 	border-top: solid 1px #eee;
 	border-bottom: solid 1px #eee;
-	margin: 20px 0 0 0;
+	margin: -1px 0 0 0;
 	float: left;
 	text-transform: none;	
 }
@@ -279,6 +285,44 @@ h5.date {
 h5.bigSpace {
 	margin-bottom: 18px;
 }
+/**************  tekst artykułów  ***************/
+article {
+	font-family: 'Times New Roman';
+	float: left;
+	display: block;
+	width: 300px;
+	padding-top: 16px;
+	height: 361px;
+	border-bottom: solid 1px #eee;	
+}
+article p {
+	float: left;
+	font-style: italic;
+	font-size: 12px;
+	margin-top: 14px;
+	line-height: 18px;
+	color: #808184;
+}
+#zoomed {
+	display: block;
+	float: left;
+	width: 620px;
+	height: 412px;
+	margin-right: 22px;
+}
+/**************  sekcja klienci  ***************/
+#clients .column{
+	width: 280px;
+	padding-right: 20px;
+	margin-right: 20px;
+	border-top: solid 1px #eee;	
+	border-bottom: solid 1px #eee;		
+}
+#clients .list{
+	width: 622px;
+	border-top: solid 1px #eee;	
+	border-bottom: solid 1px #eee;	
+}
 /**************  sekcja contact  ***************/
 #contact {
 	margin-bottom: 14px;
@@ -317,7 +361,7 @@ h5.bigSpace {
 .news #zoomed {
 	height: 412px;
 	width: 620px;
-	margin-right: 20px;
+	margin-right: 22px;
 }
 .news #smallZoomed {
 	float: left;
@@ -341,31 +385,6 @@ h5.bigSpace {
 }
 .news .column:last-child {
 	padding-right: 20px;
-}
-/**************  tekst artykułów  ***************/
-article {
-	font-family: 'Times New Roman';
-	float: left;
-	display: block;
-	width: 300px;
-	padding-top: 16px;
-	height: 361px;
-	border-bottom: solid 1px #eee;	
-}
-article p {
-	float: left;
-	font-style: italic;
-	font-size: 12px;
-	margin-top: 14px;
-	line-height: 18px;
-	color: #808184;
-}
-#zoomed {
-	display: block;
-	float: left;
-	width: 620px;
-	height: 412px;
-	margin-right: 22px;
 }
 /**************  nawigacja newsów   ***************/
 #newsNav {
