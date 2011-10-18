@@ -156,7 +156,7 @@ ul {
 	margin-right: 0;
 }
 #globalnav li a {
-	font-weight: 200;
+	font-weight: normal;
 	letter-spacing: 1px;
 	color: #363636;
 }
@@ -245,6 +245,64 @@ section {
 #contact .info {
 	margin-bottom: 9px;
 }
+.news {
+	height: 412px;
+	margin-bottom: 38px;
+}
+.news #zoomed {
+	height: 412px;
+	width: 620px;
+	margin-right: 20px;
+}
+.news #smallZoomed {
+	float: left;
+	height: 412px;
+	width: 300px;
+	margin-right: 20px;
+}
+.news article{
+	float: left;
+	height: 383px;
+	padding-top: 27px;
+	border-top: solid 1px #eee;	
+}
+.news .wider {
+	width: 620px;
+}
+.news .wider p {
+	width: 280px;
+}
+.news .wider p.column {
+	width: 280px;
+	margin-right: 40px;
+}
+.news .wider p.column:last-child {
+	width: 280px;
+	margin-right: 0;
+}
+#newsNav {
+	float: left;
+	display: table;
+	width: 100%;
+	margin-top: -19px;
+	padding: 0;
+}
+#newsNav li {
+	display: table-cell;
+}
+#newsNav li:last-child {
+	text-align: right;
+	padding-right: 4px;
+}
+#newsNav li a {
+	font-family: 'Times New Roman';
+	font-size: 14px;
+	font-style: italic;
+	color: #808184;
+}
+#newsNav li a:hover {
+	color: #5f938e;	
+}
 article {
 	font-family: 'Times New Roman';
 	float: left;
@@ -303,7 +361,7 @@ article p {
 	border-bottom: solid 1px #eee;	
 	display: block;
 	float: left;
-	margin-bottom: 18px;
+	margin-bottom: 8px;
 }
 #thumbs {
 	width: 100%;
@@ -413,6 +471,10 @@ h5 {
 }
 h5.name {
 	color: #5f938e;
+}
+h5.date {
+	font-size: 12px;
+	font-weight: normal;
 }
 
 /**** Isotope Filtering ****/

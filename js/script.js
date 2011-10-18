@@ -1,12 +1,12 @@
 /* Author: 
 
 */
-$('#container').isotope({
-  // options
-  
-  masonry : {
-    columnWidth : 80
-  }
+$('#container').imagesLoaded( function(){
+	$(this).isotope({
+  		masonry : {
+    		columnWidth : 80
+  		}
+	});
 });
 
 
