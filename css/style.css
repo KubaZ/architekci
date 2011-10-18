@@ -86,14 +86,15 @@ header {
 	font-family: 'DharmaGothicMBold';
 	font-weight: normal;
 	position: relative;
+	float: left;
 	width: 100%;
-	height: 160px;
 	text-transform: uppercase;
 }
 a {
 	text-decoration: none;
+	color: #808184;
 }
-a:hover {
+a:hover, .active a {
 	color: #5f938e;
 }
 ul {
@@ -105,6 +106,7 @@ ul {
 	float: left;
 	margin: 64px 68px 0 0;
 }
+/**************  wybór języka  ***************/
 #lang {
 	position: absolute;
 	font-family: 'Times New Roman';
@@ -131,6 +133,7 @@ ul {
 #lang li:last-child a{
 	margin: 0 0 0 3px;	
 }
+/**************  główne menu  ***************/
 #globalnav {
 	float: right;
 	display: block;
@@ -163,12 +166,13 @@ ul {
 #globalnav li a:hover, .active a{
 	color: #5f938e;
 }
+/**************  podmenu  ***************/
 #localnav {
 	width: 100%;
 	line-height: 35px;
 	border-top: solid 1px #eee;
 	border-bottom: solid 1px #eee;
-	margin: 20px 0 27px 0;
+	margin: 20px 0 0 0;
 	float: left;
 	text-transform: none;
 }
@@ -186,12 +190,44 @@ ul {
 #localnav li a:hover, .active a{
 	color: #5f938e;
 }
+/**************  menu realizacji  ***************/
+#productionNav {
+	width: 100%;
+	height: 70px;
+	border-top: solid 1px #eee;
+	border-bottom: solid 1px #eee;
+	margin: 20px 0 0 0;
+	float: left;
+	text-transform: none;	
+}
+#productionNav ul {
+	float: left;
+	padding: 8px 0 0 17px;
+}
+#productionNav ul li {
+	float: left;
+	width: 185px;
+	line-height: 14px;
+	margin: 2px 0;
+}
+#productionNav ul li a {
+	font-family: 'Times New Roman';
+	font-style: italic;
+	font-size: 12px;
+	color: #808184;
+}
+#productionNav ul li a:hover {
+	color: #5f938e;
+}
+/**************  główny blok  ***************/
 #maincontainer {
 	position: relative;
-	margin: 28px 0 29px 0;
+	float: left;
+	margin: 25px 0 29px 0;
 	width: 100%;
 }
-#container .item{
+/**************  blok isotope  ***************/
+#container .item {
 	display: block;
 	margin: 10px 0;
 	overflow: hidden;
@@ -214,11 +250,33 @@ ul {
 	-ms-transition-timing-function: ease-in;
 	-ms-transition-duration: 500ms;	
 }
+/**************  sekcje news/contact  ***************/
 section {
 	width: 100%;
 	display: block;
 	float: left;
 }
+/**************  nagłówki artykułów  ***************/
+h5 {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+	display: block;
+	font-style: italic;
+	color: #808184;
+	margin: 0;
+}
+h5.name {
+	color: #5f938e;
+}
+h5.date {
+	font-size: 12px;
+	font-weight: normal;
+}
+h5.bigSpace {
+	margin-bottom: 18px;
+}
+/**************  sekcja contact  ***************/
 #contact {
 	margin-bottom: 14px;
 }
@@ -245,9 +303,13 @@ section {
 #contact .info {
 	margin-bottom: 9px;
 }
+/**************  sekcja news  ***************/
 .news {
 	height: 412px;
 	margin-bottom: 38px;
+}
+.news:last-child {
+	margin-bottom: 16px;
 }
 .news #zoomed {
 	height: 412px;
@@ -266,43 +328,18 @@ section {
 	padding-top: 27px;
 	border-top: solid 1px #eee;	
 }
-.news .wider {
-	width: 620px;
-}
-.news .wider p {
+.news .column {
 	width: 280px;
+	padding-right: 40px;
 }
-.news .wider p.column {
-	width: 280px;
-	margin-right: 40px;
-}
-.news .wider p.column:last-child {
-	width: 280px;
-	margin-right: 0;
-}
-#newsNav {
-	float: left;
-	display: table;
+.news .column p {
 	width: 100%;
-	margin-top: -19px;
-	padding: 0;
+	margin-bottom: 6px;
 }
-#newsNav li {
-	display: table-cell;
+.news .column:last-child {
+	padding-right: 20px;
 }
-#newsNav li:last-child {
-	text-align: right;
-	padding-right: 4px;
-}
-#newsNav li a {
-	font-family: 'Times New Roman';
-	font-size: 14px;
-	font-style: italic;
-	color: #808184;
-}
-#newsNav li a:hover {
-	color: #5f938e;	
-}
+/**************  tekst artykułów  ***************/
 article {
 	font-family: 'Times New Roman';
 	float: left;
@@ -327,6 +364,31 @@ article p {
 	height: 412px;
 	margin-right: 22px;
 }
+/**************  nawigacja newsów   ***************/
+#newsNav {
+	float: left;
+	display: table;
+	width: 100%;
+	margin-top: -19px;
+	padding: 0;
+}
+#newsNav li {
+	display: table-cell;
+}
+#newsNav li:last-child {
+	text-align: right;
+	padding-right: 4px;
+}
+#newsNav li a {
+	font-family: 'Times New Roman';
+	font-size: 14px;
+	font-style: italic;
+	color: #808184;
+}
+#newsNav li a:hover {
+	color: #5f938e;	
+}
+/**************  nawigacja realizacjami  ***************/
 #articleNav {
 	float: left;
 	width: 300px;
@@ -355,6 +417,7 @@ article p {
 	top:7px;
 	right:20px;
 }
+/**************  nawigacja zdjęciami realizacji  ***************/
 #thumbs {
 	width: 100%;
 	height: 88px;
@@ -395,6 +458,7 @@ article p {
 	margin: 18px 0 0 9px;
 	border: solid 1px #eee;
 }
+/**************  stopka  ***************/
 #globalfooter {
 	font-family: 'Times New Roman';
 	font-style: italic;
@@ -406,6 +470,7 @@ article p {
 	border-top: solid 1px #eee;
 	border-bottom: solid 1px #eee;
 }
+/**************  menu stopki  ***************/
 #globalnav2 {
 	float: left;
 	display: table;
@@ -460,22 +525,7 @@ article p {
 #minima:hover {
 	color: #5f938e;
 }
-h5 {
-	font-size: 14px;
-	line-height: 18px;
-	font-weight: bold;
-	display: block;
-	font-style: italic;
-	color: #808184;
-	margin: 0;
-}
-h5.name {
-	color: #5f938e;
-}
-h5.date {
-	font-size: 12px;
-	font-weight: normal;
-}
+
 
 /**** Isotope Filtering ****/
 
