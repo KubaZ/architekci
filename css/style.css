@@ -232,6 +232,9 @@ ul {
 	margin: 26px 0 0 0;
 	width: 100%;
 }
+#maincontainer.index {
+	margin-top: 18px;
+}
 /**************  blok isotope  ***************/
 #container .item {
 	display: block;
@@ -267,31 +270,6 @@ section.production {
 	border-bottom: solid 1px #eee;	
 	margin-bottom: 9px;
 }
-/**************  sekcja klienci  ***************/
-#clients {
-	height: 415px;
-	margin-top: 9px;
-	margin-bottom: 16px;
-}
-#clients .column{
-	width: 280px;
-	height: 386px;
-	padding-right: 18px;
-	padding-top: 27px;
-	margin-right: 22px;
-	border-top: solid 1px #eee;	
-	border-bottom: solid 1px #eee;		
-}
-#clients .list{
-	width: 620px;
-	height: 353px;
-	padding-top: 60px;
-	border-top: solid 1px #eee;	
-	border-bottom: solid 1px #eee;	
-}
-#clients p {
-	margin-top: 13px;
-}
 /**************  sekcja contact  ***************/
 #contact {
 	margin-top: 1px;
@@ -323,6 +301,54 @@ section.production {
 #contact .info {
 	margin-bottom: 9px;
 }
+/**************  sekcja about  ***************/
+.about {
+	height: 415px;
+	margin-top: 9px;
+	margin-bottom: 26px;
+}
+.about .column{
+	float: left;
+	width: 280px;
+	height: 386px;
+	padding-right: 40px;
+	padding-top: 27px;
+	border-top: solid 1px #eee;	
+	border-bottom: solid 1px #eee;		
+}
+.about .column:last-child {
+	padding-right: 20px;
+}
+.about .list{
+	width: 620px;
+	height: 353px;
+	padding-top: 60px;
+	border-top: solid 1px #eee;	
+	border-bottom: solid 1px #eee;	
+}
+.about p {
+	margin-top: 13px;
+}
+.about #zoomed {
+	height: 412px;
+	width: 620px;
+	margin-right: 20px;
+}
+.about #smallZoomed {
+	float: left;
+	height: 412px;
+	width: 300px;
+	margin-right: 20px;
+}
+.about article{
+	float: left;
+	height: 383px;
+	padding-top: 27px;
+	border-top: solid 1px #eee;	
+}
+.about:last-child {
+	margin-bottom: 16px;
+}
 /**************  sekcja news  ***************/
 .news {
 	height: 412px;
@@ -348,13 +374,12 @@ section.production {
 	padding-top: 27px;
 	border-top: solid 1px #eee;	
 }
+.news p {
+	width: 280px;
+}
 .news .column {
 	width: 280px;
 	padding-right: 40px;
-}
-.news .column p {
-	width: 100%;
-	margin-bottom: 6px;
 }
 .news .column:last-child {
 	padding-right: 20px;
@@ -553,8 +578,6 @@ h5.client a:hover {
 #up a {
 	display:block;
 	text-align: right;
-	font-weight: normal;
-	letter-spacing: 0;
 	margin-left: 33px;
 	width: 74px;
 	height: 34px;
@@ -562,6 +585,9 @@ h5.client a:hover {
 	background: url(../img/up.png) 2px 11px no-repeat;
 	color: #808184;
 	font-size: 14px;
+}
+#up a:hover {
+	color: #5f938e;	
 }
 #minima {
 	float: left;
