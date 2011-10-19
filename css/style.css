@@ -268,17 +268,29 @@ section.production {
 	margin-bottom: 9px;
 }
 /**************  sekcja klienci  ***************/
+#clients {
+	height: 415px;
+	margin-top: 9px;
+	margin-bottom: 16px;
+}
 #clients .column{
 	width: 280px;
-	padding-right: 20px;
-	margin-right: 20px;
+	height: 386px;
+	padding-right: 18px;
+	padding-top: 27px;
+	margin-right: 22px;
 	border-top: solid 1px #eee;	
 	border-bottom: solid 1px #eee;		
 }
 #clients .list{
 	width: 620px;
+	height: 353px;
+	padding-top: 60px;
 	border-top: solid 1px #eee;	
 	border-bottom: solid 1px #eee;	
+}
+#clients p {
+	margin-top: 13px;
 }
 /**************  sekcja contact  ***************/
 #contact {
@@ -391,6 +403,21 @@ h5.date {
 }
 h5.bigSpace {
 	margin-bottom: 18px;
+}
+h5.client {
+	font-size: 14px;
+	line-height: 18px;
+	margin-left: 32px;
+	font-weight: normal;
+	margin-bottom: 18px;
+}
+h5.client a {
+	font-size: 12px;
+	margin-left: 2px;
+	color: #808184;
+}
+h5.client a:hover {
+	color: #5f938e;
 }
 /**************  nawigacja newsów   ***************/
 #newsNav {
