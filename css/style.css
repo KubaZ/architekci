@@ -114,7 +114,7 @@ ul {
 	position: absolute;
 	font-family: 'Times New Roman';
 	right: -1px;
-	top: 76px;
+	top: 75px;
 	text-transform: lowercase;
 	font-size: 14px;
 	font-style: italic;
@@ -151,6 +151,7 @@ ul {
 #globalnav ul {
 	float: right;
 	width: 624px;
+	margin-right: -1px;
 	display: block;
 }
 #globalnav ul li {
@@ -239,6 +240,7 @@ ul {
 }
 #container {
 	float: left;
+	overflow: hidden;
 	width: 960px;
 }
 #container .item img:hover {
@@ -280,9 +282,11 @@ section.production {
 }
 /**************  sekcja contact  ***************/
 #contact {
+	margin-top: 1px;
 	margin-bottom: 14px;
 }
 #contact article {
+	width: 298px;
 	margin-top: -1px;
 	padding-top: 27px;
 	height: 387px;
@@ -301,6 +305,8 @@ section.production {
 }
 #contact #zoomed {
 	height: 415px;
+	width: 620px;
+	margin-right: 22px;
 }
 #contact .info {
 	margin-bottom: 9px;
@@ -308,7 +314,7 @@ section.production {
 /**************  sekcja news  ***************/
 .news {
 	height: 412px;
-	margin-bottom: 38px;
+	margin: 1px 0 37px 0;
 }
 .news:last-child {
 	margin-bottom: 16px;
@@ -404,6 +410,7 @@ h5.bigSpace {
 #newsNav li a {
 	font-family: 'Times New Roman';
 	font-size: 14px;
+	line-height: 18px;
 	font-style: italic;
 	color: #808184;
 }
@@ -490,15 +497,15 @@ h5.bigSpace {
 #globalnav2 {
 	float: left;
 	display: table;
-	margin-top: 20px;
+	margin: 20px 0 20px -1px;
 	height: 32px;
-	width: 690px;
+	width: 691px;
 	padding-right: 14px;
 	border-right: solid 1px #eee;
 }
 #globalnav2 li{
 	float: left;
-	margin-right: 28px;
+	margin-right: 29px;
 }
 #globalnav2 li a {
 	line-height: 32px;
