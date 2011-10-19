@@ -78,7 +78,7 @@ td { vertical-align: top; }
 
 }
 body {
-	width: 942px;
+	width: 940px;
 	margin: 0 auto;
 	
 }
@@ -89,10 +89,6 @@ header {
 	float: left;
 	width: 100%;
 	text-transform: uppercase;
-}
-#reference {
-	position: absolute;
-	top:0;
 }
 a {
 	text-decoration: none;
@@ -111,14 +107,14 @@ ul {
 }
 #logo {
 	position: absolute;
-	top: 64px;
+	top: 65px;
 }
 /**************  wybór języka  ***************/
 #lang {
 	position: absolute;
 	font-family: 'Times New Roman';
-	right: 0;
-	top: 75px;
+	right: -1px;
+	top: 76px;
 	text-transform: lowercase;
 	font-size: 14px;
 	font-style: italic;
@@ -147,22 +143,21 @@ ul {
 	font-stretch: condensed;
 	color: #2a2a2a;
 	font-size: 24px;
+	height: 24px;
 	width: 100%;
-	height: 29px;
-	margin: 110px 0 0 0;
-	padding-bottom: 20px;
+	margin: 113px 0 0 0;
+	padding-bottom: 24px;
 }
 #globalnav ul {
 	float: right;
 	width: 624px;
-	height: 100%;
 	display: block;
 }
 #globalnav ul li {
 	float: left;
 	text-align: right;
 	margin-right: 16px;
-	line-height: 29px;
+	line-height: 24px;
 }
 #globalnav ul li:last-child {
 	margin-right: 0;
@@ -179,8 +174,8 @@ ul {
 #localnav {
 	width: 100%;
 	line-height: 35px;
-	border-top: solid 1px #eee;
-	border-bottom: solid 1px #eee;
+	border-top: 1px solid  #eee;
+	border-bottom: 1px solid  #eee;
 	margin: 0;
 	float: left;
 	text-transform: none;
@@ -202,7 +197,7 @@ ul {
 /**************  menu realizacji  ***************/
 #productionNav {
 	width: 100%;
-	height: 70px;
+	height: 71px;
 	border-top: solid 1px #eee;
 	border-bottom: solid 1px #eee;
 	margin: -1px 0 0 0;
@@ -211,11 +206,11 @@ ul {
 }
 #productionNav ul {
 	float: left;
-	padding: 8px 0 0 17px;
+	padding: 9px 0 0 0;
 }
 #productionNav ul li {
 	float: left;
-	width: 185px;
+	width: 188px;
 	line-height: 14px;
 	margin: 2px 0;
 }
@@ -223,6 +218,7 @@ ul {
 	font-family: 'Times New Roman';
 	font-style: italic;
 	font-size: 12px;
+	margin-left: 14px;
 	color: #808184;
 }
 #productionNav ul li a:hover {
@@ -232,7 +228,7 @@ ul {
 #maincontainer {
 	position: relative;
 	float: left;
-	margin: 25px 0 0 0;
+	margin: 26px 0 0 0;
 	width: 100%;
 }
 /**************  blok isotope  ***************/
@@ -259,56 +255,15 @@ ul {
 	-ms-transition-timing-function: ease-in;
 	-ms-transition-duration: 500ms;	
 }
-/**************  sekcje news/contact  ***************/
+/**************  sekcje news/contact/production  ***************/
 section {
 	width: 100%;
 	display: block;
 	float: left;
 }
-/**************  nagłówki artykułów  ***************/
-h5 {
-	font-size: 14px;
-	line-height: 18px;
-	font-weight: bold;
-	display: block;
-	font-style: italic;
-	color: #808184;
-	margin: 0;
-}
-h5.name {
-	color: #5f938e;
-}
-h5.date {
-	font-size: 12px;
-	font-weight: normal;
-}
-h5.bigSpace {
-	margin-bottom: 18px;
-}
-/**************  tekst artykułów  ***************/
-article {
-	font-family: 'Times New Roman';
-	float: left;
-	display: block;
-	width: 300px;
-	padding-top: 16px;
-	height: 361px;
+section.production {
 	border-bottom: solid 1px #eee;	
-}
-article p {
-	float: left;
-	font-style: italic;
-	font-size: 12px;
-	margin-top: 14px;
-	line-height: 18px;
-	color: #808184;
-}
-#zoomed {
-	display: block;
-	float: left;
-	width: 620px;
-	height: 412px;
-	margin-right: 22px;
+	margin-bottom: 9px;
 }
 /**************  sekcja klienci  ***************/
 #clients .column{
@@ -319,7 +274,7 @@ article p {
 	border-bottom: solid 1px #eee;		
 }
 #clients .list{
-	width: 622px;
+	width: 620px;
 	border-top: solid 1px #eee;	
 	border-bottom: solid 1px #eee;	
 }
@@ -361,7 +316,7 @@ article p {
 .news #zoomed {
 	height: 412px;
 	width: 620px;
-	margin-right: 22px;
+	margin-right: 20px;
 }
 .news #smallZoomed {
 	float: left;
@@ -385,6 +340,51 @@ article p {
 }
 .news .column:last-child {
 	padding-right: 20px;
+}
+/**************  tekst artykułów  ***************/
+article {
+	font-family: 'Times New Roman';
+	float: left;
+	display: block;
+	width: 300px;
+	padding-top: 14px;
+	height: 361px;
+	border-bottom: solid 1px #eee;	
+}
+article p {
+	float: left;
+	font-style: italic;
+	font-size: 12px;
+	margin-top: 15px;
+	line-height: 18px;
+	color: #808184;
+}
+#zoomed {
+	display: block;
+	float: left;
+	width: 620px;
+	height: 412px;
+	margin-right: 20px;
+}
+/**************  nagłówki artykułów  ***************/
+h5 {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+	display: block;
+	font-style: italic;
+	color: #808184;
+	margin: 0;
+}
+h5.name {
+	color: #5f938e;
+}
+h5.date {
+	font-size: 12px;
+	font-weight: normal;
+}
+h5.bigSpace {
+	margin-bottom: 18px;
 }
 /**************  nawigacja newsów   ***************/
 #newsNav {
@@ -414,7 +414,7 @@ article p {
 #articleNav {
 	float: left;
 	width: 300px;
-	height: 34px;
+	height: 37px;
 	border-top: solid 1px #eee;	
 	border-bottom: solid 1px #eee;		
 	display: table;
@@ -432,24 +432,18 @@ article p {
 	position: absolute;
 }
 #prevArticle img {
-	top:7px;
-	left:20px;
+	top: 9px;
+	left: 7px;
 }
 #nextArticle img {
-	top:7px;
-	right:20px;
+	top: 9px;
+	right: 10px;
 }
 /**************  nawigacja zdjęciami realizacji  ***************/
 #thumbs {
-	width: 100%;
+	width: 942px;
 	height: 88px;
-	border-bottom: solid 1px #eee;	
-	display: block;
 	float: left;
-	margin-bottom: 8px;
-}
-#thumbs {
-	width: 100%;
 	display: table;
 }
 #thumbs li {
@@ -529,7 +523,7 @@ article p {
 	letter-spacing: 0;
 	margin-left: 33px;
 	width: 74px;
-	height: 32px;
+	height: 34px;
 	line-height: 36px;
 	background: url(../img/up.png) 2px 11px no-repeat;
 	color: #808184;
@@ -537,8 +531,8 @@ article p {
 }
 #minima {
 	float: left;
-	height: 32px;
-	line-height: 37px;
+	height: 34px;
+	line-height: 38px;
 	margin: 18px 0 0 24px;
 	text-align: center;
 	font-size: 10px;
