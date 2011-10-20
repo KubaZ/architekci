@@ -50,7 +50,10 @@ $('#container').imagesLoaded( function(){
 $('a').click(function(){
 	$(this).parent().addClass("active").siblings().removeClass("active");
 });
-
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
 
 
 
