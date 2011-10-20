@@ -45,6 +45,17 @@ $('#container').imagesLoaded( function(){
   		}
 	});
 });
+$(window).load(function() {
+    $('#slider').nivoSlider({
+		effect: 'random',
+		animSpeed: 500,
+		pauseTime: 5000,
+		controlNavThumbs: true,
+		controlNavThumbsFromRel:true,
+		directionNav: true,
+        directionNavHide: true
+	});
+});
 $('.item img').hover(
 	function() {
 	$(this).stop(true,true).animate({scale: '+=0.20'}, 300);
