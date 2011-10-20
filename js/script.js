@@ -61,7 +61,7 @@ $("a[href='#top']").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
   return false;
 });
-$("#prevArticle a").hover(
+$("#prevArticle a, #prevThumb a").hover(
 	function() {
 		$(this).children().addClass("active").stop(true,true).animate({marginLeft: '-=4px'},300);
 	},
@@ -69,12 +69,20 @@ $("#prevArticle a").hover(
 		$(this).children().removeClass("active").stop(true,true).animate({marginLeft: '+=4px'},300);	
 	}
 );
-$("#nextArticle a").hover(
+$("#nextArticle a, #nextThumb a").hover(
 	function() {
 		$(this).children().addClass("active").stop(true,true).animate({marginRight: '-=4px'},300);
 	},
 	function() {
 		$(this).children().removeClass("active").stop(true,true).animate({marginRight: '+=4px'},300);	
+	}
+);
+$("#up a").hover(
+	function() {
+		$(this).children().addClass("active").stop(true,true).animate({marginTop: '-=4px'},300);
+	},
+	function() {
+		$(this).children().removeClass("active").stop(true,true).animate({marginTop: '+=4px'},300);	
 	}
 );
 
