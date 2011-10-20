@@ -53,8 +53,7 @@ $('.item img').hover(
 	$(this).stop(true,true).animate({scale: '-=0.20'}, 300);	
 	}
 );
-
-$('a').click(function(){
+$('#globalnav a, #localnav a, #productionNav a').click(function(){
 	$(this).parent().addClass("active").siblings().removeClass("active");
 });
 $("a[href='#top']").click(function() {
