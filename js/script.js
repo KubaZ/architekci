@@ -1,6 +1,4 @@
-/* Author: 
 
-*/
 $.reject({
     reject: {
         safari: false, // Apple Safari
@@ -47,6 +45,15 @@ $('#container').imagesLoaded( function(){
   		}
 	});
 });
+$('.item img').hover(
+	function() {
+	$(this).stop(true,true).animate({scale: '+=0.20'}, 300);
+	},
+	function() {
+	$(this).stop(true,true).animate({scale: '-=0.20'}, 300);	
+	}
+);
+
 $('a').click(function(){
 	$(this).parent().addClass("active").siblings().removeClass("active");
 });
@@ -54,6 +61,22 @@ $("a[href='#top']").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
   return false;
 });
+$("#prevArticle a").hover(
+	function() {
+		$(this).children().addClass("active").stop(true,true).animate({marginLeft: '-=4px'},300);
+	},
+	function() {
+		$(this).children().removeClass("active").stop(true,true).animate({marginLeft: '+=4px'},300);	
+	}
+);
+$("#nextArticle a").hover(
+	function() {
+		$(this).children().addClass("active").stop(true,true).animate({marginRight: '-=4px'},300);
+	},
+	function() {
+		$(this).children().removeClass("active").stop(true,true).animate({marginRight: '+=4px'},300);	
+	}
+);
 
 
 

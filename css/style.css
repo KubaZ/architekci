@@ -246,6 +246,7 @@ ul {
 	overflow: hidden;
 	width: 960px;
 }
+/*
 #container .item img:hover {
 	-webkit-transform: scale(1.2);
 	-webkit-transition-timing-function: ease-in;
@@ -259,7 +260,8 @@ ul {
 	-ms-transform: scale(1.2);
 	-ms-transition-timing-function: ease-in;
 	-ms-transition-duration: 500ms;	
-}
+}*/
+
 /**************  sekcje news/contact/production  ***************/
 section {
 	width: 100%;
@@ -480,6 +482,7 @@ h5.client a:hover {
 }
 #articleNav li {
 	display: table-cell;
+	height: 100%;
 }
 #articleNav li a {
 	position: relative;
@@ -487,16 +490,25 @@ h5.client a:hover {
 	width: 100%;
 	height: 100%;
 }
-#articleNav li a img{
-	position: absolute;
+#articleNav .arrow {
+	width: 12px;
+	height: 17px;
 }
-#prevArticle img {
-	top: 9px;
-	left: 7px;
+#prevArticle .arrow{
+	float: left;
+	margin: 9px 0 0 12px;
+	background: url(../img/arrows.png) 0% 0% no-repeat;
 }
-#nextArticle img {
-	top: 9px;
-	right: 10px;
+#prevArticle .arrow.active {
+	background: url(../img/arrows.png) 30% 0% no-repeat;
+}
+#nextArticle .arrow{
+	float: right;
+	margin: 9px 12px 0 0;
+	background: url(../img/arrows.png) 100% 0% no-repeat;
+}
+#nextArticle .arrow.active {
+	background: url(../img/arrows.png) 70% 0% no-repeat;
 }
 /**************  nawigacja zdjęciami realizacji  ***************/
 #thumbs {
