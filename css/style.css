@@ -192,7 +192,7 @@ ul {
 	font-weight: bold;
 	color: #808184;	
 }
-#localnav li a:hover, .active a{
+#localnav li a:hover, #localnav .active a{
 	color: #5f938e;
 }
 /**************  menu realizacji  ***************/
@@ -222,7 +222,7 @@ ul {
 	margin-left: 14px;
 	color: #808184;
 }
-#productionNav ul li a:hover {
+#productionNav ul li a:hover,#productionNav ul .active a{
 	color: #5f938e;
 }
 /**************  główny blok  ***************/
