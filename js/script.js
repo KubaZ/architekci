@@ -48,7 +48,7 @@ $('#container').imagesLoaded( function(){
 $(window).load(function() {
     $('#slider').nivoSlider({
 		effect: 'random',
-		animSpeed: 500,
+		animSpeed: 300,
 		pauseTime: 5000,
 		controlNav: true,
 		controlNavThumbs: true,
@@ -67,14 +67,14 @@ $('.item img').hover(
 	$(this).stop(true,true).animate({scale: '-=0.20'}, 300);	
 	}
 );
-$('#globalnav a, #localnav a, #productionNav a').click(function(){
+$('#globalnav a, #localnav a, #productionNav a, #lang a').click(function(){
 	$(this).parent().addClass("active").siblings().removeClass("active");
 });
 $("a[href='#top']").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
   return false;
 });
-$("#prevArticle a, #prevThumb a").hover(
+$("#prevArticle a").hover(
 	function() {
 		$(this).children().addClass("active").stop(true,true).animate({marginLeft: '-=4px'},300);
 	},
@@ -82,7 +82,7 @@ $("#prevArticle a, #prevThumb a").hover(
 		$(this).children().removeClass("active").stop(true,true).animate({marginLeft: '+=4px'},300);	
 	}
 );
-$("#nextArticle a, #nextThumb a").hover(
+$("#nextArticle a ").hover(
 	function() {
 		$(this).children().addClass("active").stop(true,true).animate({marginRight: '-=4px'},300);
 	},
