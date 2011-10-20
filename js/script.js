@@ -50,6 +50,7 @@ $(window).load(function() {
 		effect: 'random',
 		animSpeed: 500,
 		pauseTime: 5000,
+		controlNav: true,
 		controlNavThumbs: true,
 		controlNavThumbsFromRel: true,
 		directionNav: true,
