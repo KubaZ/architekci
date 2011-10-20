@@ -51,9 +51,11 @@ $(window).load(function() {
 		animSpeed: 500,
 		pauseTime: 5000,
 		controlNavThumbs: true,
-		controlNavThumbsFromRel:true,
+		controlNavThumbsFromRel: true,
 		directionNav: true,
-        directionNavHide: true
+        directionNavHide: true,
+		prevText: '',
+		nextText: ''
 	});
 });
 $('.item img').hover(
