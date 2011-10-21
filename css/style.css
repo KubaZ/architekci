@@ -678,7 +678,6 @@ h5.client a:hover {
 	height:412px;
 	margin-right: 20px;
 	background: url(../img/loading.gif) no-repeat 50% 50%;
-
 }
 .nivoSlider img {
 	position:absolute;
@@ -689,7 +688,7 @@ h5.client a:hover {
 	display: block;
 	width: 942px;
 	height: 88px;
-	margin-top: 414px;
+	margin: 414px 0 3px 0;
 	overflow: hidden;
 	background: url(../img/thumbs.png) 0 0 no-repeat;
 }

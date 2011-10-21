@@ -59,12 +59,12 @@ $(window).load(function() {
 		nextText: ''
 	});
 });
-$('.item img').hover(
+$('.item').hover(
 	function() {
-	$(this).stop(true,true).animate({scale: '+=0.20'}, 300);
+	$(this).children('img').stop(true,true).animate({scale: '+=0.20'}, 300);
 	},
 	function() {
-	$(this).stop(true,true).animate({scale: '-=0.20'}, 300);	
+	$(this).children('img').stop(true,true).animate({scale: '-=0.20'}, 500);	
 	}
 );
 $('#globalnav a, #localnav a, #productionNav a, #lang a').click(function(){
