@@ -269,9 +269,11 @@ section {
 	float: left;
 }
 section.production {
+	width: 942px;
 	border-bottom: solid 1px #eee;	
-	margin-bottom: 9px;
 	padding-bottom: 88px;
+	margin-bottom: 9px;
+	overflow-y: hidden;
 }
 /**************  sekcja contact  ***************/
 #contact {
@@ -582,7 +584,7 @@ h5.client a:hover {
 	float: left;
 	position: relative;
 	width: 100%;
-	margin: 20px 0;
+	margin: 20px 0 30px 0;
 	height: 71px;
 	border-top: solid 1px #eee;
 	border-bottom: solid 1px #eee;
@@ -591,7 +593,7 @@ h5.client a:hover {
 #globalnav2 {
 	float: left;
 	display: table;
-	margin: 20px 0 20px -1px;
+	margin: 20px 0 0 -1px;
 	height: 32px;
 	width: 691px;
 	padding-right: 14px;
@@ -655,17 +657,18 @@ h5.client a:hover {
 /*********** NIVO SLIDER ***********/
 .nivoSlider {
 	position: relative;
-	float:left;
+	float: left;
 	width:620px; /* Change this to your images width */
 	height:412px;
 	margin-right: 20px;
 	background: url(../img/loading.gif) no-repeat 50% 50%;
+
 }
 .nivoSlider img {
 	position:absolute;
 	top:0px;
 	left:0px;
-}
+} 
 #slider .nivo-controlNav {
 	display: block;
 	width: 942px;
@@ -694,7 +697,6 @@ h5.client a:hover {
 	display: block;
 	width: 100%;
 	height: 100%;
-	
 }
 /* If an image is wrapped in a link */
 .nivoSlider a.nivo-imageLink {
@@ -724,7 +726,7 @@ h5.client a:hover {
 /* Direction nav styles (e.g. Next & Prev) */
 .nivo-directionNav a {
 	position:absolute;
-	height: 100%;
+	height: 412px;
 	width: 5%;
 	z-index:9;
 	top: 0;
