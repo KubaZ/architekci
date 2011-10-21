@@ -148,10 +148,14 @@ ul {
 	margin: 113px 0 0 0;
 	padding-bottom: 24px;
 }
+.ie8 #globalnav ul {
+	width: 640px;
+	margin-right: -17px;
+}
 #globalnav ul {
 	float: right;
-	width: 626px;
-	margin-right: -3px;
+	width: 624px;
+	margin-right: -1px;
 	display: block;
 }
 #globalnav ul li {
@@ -312,17 +316,20 @@ section.production {
 	margin-top: 9px;
 	margin-bottom: 26px;
 }
-.about .column{
+.about .column:last-child {
+	padding-right: 20px;
+}
+.about .column {
 	float: left;
 	width: 280px;
-	height: 384px;
+	height: 386px;
 	padding-right: 40px;
 	padding-top: 27px;
 	border-top: solid 1px #eee;	
 	border-bottom: solid 1px #eee;	
 	margin: 0;	
 }
-.about .column:last-child {
+.ie8 .about #last{
 	padding-right: 20px;
 }
 .about .list{
