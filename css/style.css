@@ -244,10 +244,8 @@ ul {
 #container .item {
 	display: block;
 	margin: 10px 0;
+	border: 1px solid #dcddde;
 	overflow: hidden;
-}
-.item img {
-	border: 1px solid #eee;
 }
 #container {
 	float: left;
@@ -282,133 +280,6 @@ section.production {
 	margin-bottom: 9px;
 	overflow-y: hidden;
 }
-/**************  sekcja contact  ***************/
-#contact {
-	margin-top: 1px;
-	margin-bottom: 14px;
-}
-#contact article {
-	width: 298px;
-	margin-top: -1px;
-	padding-top: 27px;
-	height: 387px;
-	border-top: solid 1px #eee;	
-}
-#contact article p {
-	margin: 9px 0;
-	width: 100%;
-	font-size: 14px;
-}
-#contact p a {
-	color: #808184;	
-}
-#contact p a:hover {
-	color: #5f938e;	
-}
-#contact #zoomed {
-	height: 415px;
-	width: 620px;
-	margin-right: 22px;
-}
-#contact .info {
-	margin-bottom: 9px;
-}
-/**************  sekcja about  ***************/
-.about {
-	height: 412px;
-	margin-top: 9px;
-	margin-bottom: 30px;
-}
-.about .column:last-child {
-	padding-right: 20px;
-}
-.about .column {
-	float: left;
-	width: 280px;
-	height: 384px;
-	padding-right: 40px;
-	padding-top: 27px;
-	border-bottom: solid 1px #eee;	
-	margin: 0;	
-}
-.ie8 .about #last{
-	padding-right: 20px;
-}
-#last {
-	padding-top:63px;
-	height: 348px;
-}
-.about .list{
-	width: 620px;
-	height: 350px;
-	padding-top: 60px;
-	border-bottom: solid 1px #eee;	
-}
-.about p {
-	margin-top: 16px;
-	font-size: 12px;
-}
-#clients {
-	margin-right: 20px;
-	padding-right: 20px;
-}
-.about #zoomed {
-	height: 410px;
-	width: 618px;
-	margin: 0 20px 0 0;
-	border: solid 1px #eee;	
-}
-.about #smallZoomed {
-	float: left;
-	height: 410px;
-	width: 298px;
-	margin-right: 20px;
-	border: solid 1px #eee;	
-}
-.about article{
-	float: left;
-	height: 384px;
-	padding-top: 27px;
-	border-top: solid 1px #eee;	
-}
-.about:last-child {
-	margin-bottom: 16px;
-}
-/**************  sekcja news  ***************/
-.news {
-	height: 412px;
-	margin: 1px 0 37px 0;
-}
-.news:last-child {
-	margin-bottom: 16px;
-}
-.news #zoomed {
-	height: 412px;
-	width: 620px;
-	margin-right: 20px;
-}
-.news #smallZoomed {
-	float: left;
-	height: 412px;
-	width: 300px;
-	margin-right: 20px;
-}
-.news article{
-	float: left;
-	height: 383px;
-	padding-top: 27px;
-	border-top: solid 1px #eee;	
-}
-.news p {
-	width: 280px;
-}
-.news .column {
-	width: 280px;
-	padding-right: 40px;
-}
-.news .column:last-child {
-	padding-right: 20px;
-}
 /**************  tekst artykułów  ***************/
 article {
 	font-family: 'Times New Roman';
@@ -424,15 +295,104 @@ article p {
 	font-style: italic;
 	font-size: 12px;
 	margin-top: 15px;
+	margin-bottom: 6px;
 	line-height: 18px;
 	color: #808184;
+	width: 280px;
+}
+.column:last-child {
+	padding-right: 20px;
+}
+.column {
+	float: left;
+	width: 280px;
+	height: 383px;
+	padding-right: 40px;
+	padding-top: 27px;
+	border-bottom: solid 1px #eee;	
+	margin: 0;	
 }
 #zoomed {
 	display: block;
 	float: left;
-	width: 620px;
-	height: 412px;
+	width: 618px;
+	height: 410px;
+	border: solid 1px #dcddde;	
 	margin-right: 20px;
+}
+#smallZoomed {
+	float: left;
+	height: 410px;
+	width: 298px;
+	margin-right: 20px;
+	border: solid 1px #dcddde;	
+}
+/**************  sekcja contact  ***************/
+#contact {
+	margin-top: 1px;
+	margin-bottom: 14px;
+}
+#contact article {
+	width: 298px;
+	padding-top: 27px;
+	height: 386px;
+	border-top: solid 1px #eee;	
+}
+#contact article p {
+	margin: 9px 0;
+	width: 100%;
+	font-size: 14px;
+}
+#contact p a {
+	color: #808184;	
+}
+#contact p a:hover {
+	color: #5f938e;	
+}
+#contact #zoomed {
+	height: 413px;
+	border: 1px solid #dcddde;
+	margin-right: 22px;
+}
+#contact .info {
+	margin-bottom: 9px;
+}
+/**************  sekcja about  ***************/
+.about {
+	height: 412px;
+	margin-top: 9px;
+	margin-bottom: 30px;
+}
+.ie8 .about #last{
+	padding-right: 20px;
+}
+#last {
+	padding-top:63px;
+	height: 347px;
+}
+.about .list{
+	width: 620px;
+	height: 350px;
+	padding-top: 60px;
+	border-bottom: solid 1px #eee;	
+}
+#clients {
+	margin-right: 20px;
+	padding-right: 20px;
+}
+.about article, .news article{
+	float: left;
+	height: 382px;
+	padding-top: 28px;
+	border-top: solid 1px #eee;	
+}
+.about:last-child, .news:last-child{
+	margin-bottom: 16px;
+}
+/**************  sekcja news  ***************/
+.news {
+	height: 412px;
+	margin: 1px 0 37px 0;
 }
 /**************  nagłówki artykułów  ***************/
 h5 {

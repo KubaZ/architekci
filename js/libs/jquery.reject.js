@@ -214,8 +214,8 @@
 		// Traverse through the DOM and
 		// Apply CSS Rules to elements
 		element.find('#jr_overlay').css({ // Creates 'background' (div)
-			width: size[0],
-			height: size[1],
+			width: '100%',
+			height: '100%',
 			position: 'absolute',
 			top: 0,
 			left: 0,
