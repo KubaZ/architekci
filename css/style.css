@@ -150,8 +150,8 @@ ul {
 }
 #globalnav ul {
 	float: right;
-	width: 624px;
-	margin-right: -1px;
+	width: 626px;
+	margin-right: -3px;
 	display: block;
 }
 #globalnav ul li {
@@ -315,11 +315,12 @@ section.production {
 .about .column{
 	float: left;
 	width: 280px;
-	height: 386px;
+	height: 384px;
 	padding-right: 40px;
 	padding-top: 27px;
 	border-top: solid 1px #eee;	
-	border-bottom: solid 1px #eee;		
+	border-bottom: solid 1px #eee;	
+	margin: 0;	
 }
 .about .column:last-child {
 	padding-right: 20px;
@@ -339,15 +340,19 @@ section.production {
 	padding-right: 20px;
 }
 .about #zoomed {
-	height: 412px;
+	height: 413px;
 	width: 620px;
-	margin-right: 20px;
+	margin: -2px 20px 0 0;
+	border-top: solid 1px #eee;	
+	border-bottom: solid 1px #eee;
 }
 .about #smallZoomed {
 	float: left;
-	height: 412px;
+	height: 413px;
 	width: 300px;
 	margin-right: 20px;
+	border-top: solid 1px #eee;	
+	border-bottom: solid 1px #eee;
 }
 .about article{
 	float: left;
