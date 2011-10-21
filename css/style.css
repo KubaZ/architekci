@@ -334,6 +334,10 @@ section.production {
 .about p {
 	margin-top: 13px;
 }
+#clients {
+	margin-right: 20px;
+	padding-right: 20px;
+}
 .about #zoomed {
 	height: 412px;
 	width: 620px;
@@ -675,6 +679,7 @@ h5.client a:hover {
 	height: 88px;
 	margin-top: 414px;
 	overflow: hidden;
+	background: url(../img/thumbs.png) 0 0 no-repeat;
 }
 #slider a.nivo-control  {
 	display: block;
@@ -682,15 +687,14 @@ h5.client a:hover {
 	float: left;
 	width: 60px;
 	height: 52px;
-	margin: 16px 9px 0 9px;
-	border: solid 1px #eee;	
+	margin: 18px 10px 0 10px;
 	cursor:pointer;
 }
 #slider a.nivo-control:first-child  {
-	margin: 16px 9px 0 0px;
+	margin: 18px 10px 0 1px;
 }
 #slider a.nivo-control:last-child  {
-	margin: 16px 0 0 9px;
+	margin: 18px 1px 0 10px;
 }
 #slider a.nitro-controlNav img {
 	float: left;
