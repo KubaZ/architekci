@@ -59,7 +59,7 @@ $(window).load(function() {
 		nextText: ''
 	});
 });
-$('.item').hover(
+$('#container .item').hover(
 	function() {
 	$(this).children('img').stop(true,true).animate({scale: '+=0.20'}, 300);
 	},

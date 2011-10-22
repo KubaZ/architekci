@@ -155,7 +155,7 @@ ul {
 }
 #globalnav ul {
 	float: right;
-	width: 100%;
+	width: 624px;
 	margin-right: 0;
 	display: block;
 }
@@ -363,7 +363,7 @@ article p {
 	margin-top: 9px;
 	margin-bottom: 30px;
 }
-.ie8 .about #last{
+.ie8 #last{
 	padding-right: 20px;
 }
 #last {
@@ -439,10 +439,12 @@ h5.client a:hover {
 }
 #newsNav li {
 	display: table-cell;
-}
-#newsNav li:last-child {
 	text-align: right;
 	padding-right: 4px;
+}
+#newsNav li:first-child {
+	text-align: left;
+	padding-right: 0;
 }
 #newsNav li a {
 	font-family: 'Times New Roman';
