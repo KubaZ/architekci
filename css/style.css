@@ -149,27 +149,26 @@ ul {
 	margin: 113px 0 0 0;
 	padding-bottom: 24px;
 }
+/*
 .ie8 #globalnav ul {
 	width: 648px;
 	margin-right: -24px;
-}
+}*/
+
 #globalnav ul {
 	float: right;
-	width: 624px;
+	width: 640px;
 	margin-right: 0;
-	display: block;
+	display: table;
 }
 #globalnav ul li {
-	float: left;
+	display: table-cell;
 	text-align: right;
-	margin-right: 24px;
-}
-#globalnav ul li:last-child {
-	margin-right: 0;
+	width: 7%;
 }
 #globalnav li a {
 	font-weight: normal;
-	letter-spacing: 0;
+	margin:none;
 	word-spacing: 5px;
 	color: #363636;
 }
